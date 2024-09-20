@@ -1,0 +1,6 @@
+<p>lista-tareas works!</p>
+<ul>
+    <li *ngFor="let tarea of listaTareas" (click)="verTarea(tarea.id)">
+        {{ tarea.nombre }} - {{ tarea.creada | date: 'short'}}
+    </li>
+</ul>
